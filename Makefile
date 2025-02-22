@@ -53,7 +53,7 @@ ARCH	:=	-march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE
 CFLAGS	:=	-g -Wall -O2 -ffunction-sections \
 			$(ARCH) $(DEFINES)
 
-CFLAGS	+=	$(INCLUDE) -D__SWITCH__ -DNIX_VERSION=$(NIX_VERSION)
+CFLAGS	+=	$(INCLUDE) -D__SWITCH__ #-DNIX_VERSION=$(NIX_VERSION)
 
 CXXFLAGS	:= $(CFLAGS) -fno-rtti -fno-exceptions
 
